@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4">
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button style="padding:1vmin;margin-top:1vmin;margin-left:1vmin;"><a href="/logout" style="color:black">Back</a></button>
+    <div class="formClass">
+        <p style="margin-top: 3vmin; margin-left: 3vmin; color: rgb(8, 80, 195); font-size: 5vmin; font-weight: bold; text-align:center">Loan Approval</p>
+    </div>
+        <form method="post">
+        {% csrf_token %} 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                     <input type="number" name="dependents" placeholder="Enter no. of dependents" style="width:100%;padding: 1vmin;">
+                </div>
+                <div class="col-lg-4">
+                    <input type="text" placeholder="Education" name="education" style="width:100%; padding: 1vmin;">
+                </div>
+                    <div class="col-lg-4">
+                        <input type="text" placeholder="Are you self employed?" name="employed" style="width:100%; padding: 1vmin;">
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-top: 1vmin;">
+            <div class="row">
+                <div class="col-lg-4">
+                     <input type="number" placeholder="Enter annual income" name="income" style="width:100%;padding: 1vmin;">
+                </div>
+                <div class="col-lg-4">
+                    <input type="number" placeholder="Enter loan amount" name="loan" style="width:100%; padding: 1vmin;">
+                </div>
+                    <div class="col-lg-4">
+                        <input type="number" placeholder="Enter loan term" name="term" style="width:100%; padding: 1vmin;">
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 1vmin;">
+            <div class="row">
+                <div class="col-lg-4">
+                     <input type="number" placeholder="Enter Cibil Score" name="cibil" style="width:100%;padding: 1vmin;">
+                </div>
+                <div class="col-lg-4">
+                    <input type="number" placeholder="Enter resedential value" name="resedential" style="width:100%; padding: 1vmin;">
+                </div>
+                    <div class="col-lg-4">
+                        <input type="number" placeholder="Enter commercial value" name="commercial" style="width:100%; padding: 1vmin;">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" style="margin-top: 1vmin;">
+            <div class="row">
+                <div class="col-lg-4">
+                     <input type="number" placeholder="Enter_luxury_value" name="luxury" style="width:100%;padding: 1vmin;">
+                </div>
+                <div class="col-lg-4">
+                    <input type="number" placeholder="Enter Bank assets value" name="bank" style="width:100%; padding: 1vmin;">
+                </div>
+
+                <div class="col-lg-4">
+                    <input type="text" placeholder="Enter designation..." name="designation" style="width:100%; padding: 1vmin;">
+                </div>
+            </div>
+        </div>
+
+
+
+       
+            
+            
+            
+         
+    
+              
+            <div class="btnHolder" style="display: flex; justify-content: space-evenly; margin-top: 5vmin;">
+            <button type="submit" name="submit" style="padding:1vmin">Submit</button>
+           </div>
+        </form>
+
+       <p style="text-align:center; margin-top:5vmin;font-size:3.75vmin">Your Loan Status is - <b><span style="color:{{color}}">{{value}}</span></b>
+        <br> <span style="font-size:2.5vmin">As predicted by our ML model</span>
+       </p>
+</body>
+</html>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+
+  .border{
+     border:2px solid black;
+     box-shadow:2px 3px 2px;
+  }
+  @media(max-width:800px){
+    .join{
+        display: none;
+    }
+}
+</style>

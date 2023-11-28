@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#"><b>UdgamAI</b> Financial Solutions</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">What We Offer?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/loginConsumer">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/signUpConsumer">Signup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/bankSide">Banks</a>
+              </li>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid bannerHolder">
+        <div class="row Banner">
+          <div class="col-lg-6">
+            <div class="container" style=" height:60vmin; width: 90vmin; ">
+                {% load static %} 
+                <img src="{% static 'digibank.png' %}" style="max-width: 100%; max-height: 100%; border-radius: 40vmin;"/>
+               
+            </div>
+          </div>
+          <div class="col-lg-6" style="display: flex; justify-content: center; align-items: center;">
+      
+            <div class="container" style=" height:60vmin; width: 90vmin; display: flex; justify-content: center; align-items: center;">
+                
+                <p style="font-weight: 600; font-size: 5vmin; font-family: sans-serif;"><span style="font-weight: 100; text-align: center; font-size: 8vmin;">Welcome to</span><br>UdgamAI Financial Solutions<br><span style="font-weight: 200; font-size: 3vmin; font-family: sans-serif;">( Innovating the Digital Banking Ecosystem with AI  )</span><br><span style="font-size: 2.75vmin;"><button style="padding:0.75vmin;">Explore</button></span></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container-fluid ServiceHolder" style="margin-top: 13vmin;">
+        <div class="container-fluid" style="height: 15vmin;">
+               <p style="text-align: center; padding-top: 3vmin;font-size: 5vmin; padding-top: 2vmin;font-family: sans-serif; letter-spacing: 0.5vmin;"><b>What we offer ?</b></p> 
+        </div>
+        <div class="row Service">
+          <div class="col-md-4" style="display: flex; justify-content: center; align-items: center;">
+                <div class="boxImage" style="height:60vmin; width: 50vmin;">
+                    {% load static %} 
+                <img src="{% static 'ai.jpg' %}" style="max-width: 100%; max-height: 100%; border-radius: 60vmin;"/>
+                <p style="text-align: center; margin-top: 2vmin; font-weight: 300;">AI and Analytics Backed Banking Ecosystem innovation</b></p>
+               
+                </div>
+          </div>
+          <div class="col-md-4 " style="display: flex; justify-content: center; align-items: center;">
+            <div class="boxImage" style="height:60vmin; width: 50vmin;">
+                {% load static %} 
+            <img src="{% static 'dashboard.jpeg' %}" style="max-width: 100%; max-height: 100%; border-radius: 60vmin;"/>
+            <p style="text-align: center; margin-top: 2vmin; font-weight: 300;">AI and data backed Dashboard for Consumers and Banks</p>
+           
+            </div>
+          </div>
+          <div class="col-md-4 " style="display: flex; justify-content: center; align-items: center;">
+            <div class="boxImage" style="height:60vmin; width: 50vmin;">
+                {% load static %} 
+            <img src="{% static 'finance_advisor_image.png' %}" style="max-width: 100%; max-height: 100%; border-radius: 60vmin;"/>
+            <p style="text-align: center; margin-top: 3vmin;font-weight: 300;">Tailored Financial Advice to consumers based on investing preference helping banks</p>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container-fluid AboutHolder" style="margin-top: 7vmin;">
+        <div class="container-fluid" style="height: 10vmin;">
+               <p style="text-align: center; padding-top: 3vmin;font-size: 6vmin; padding-top: 2vmin;font-family: sans-serif; letter-spacing: 0.5vmin;"><b>About us</b></p> 
+        </div>
+        <div class="row About" style="margin-top: 5vmin;">
+          <div class="col-md-3 border1" style="display: flex; justify-content: center; align-items: center;">
+            <div class="boxImage" style="height:30vmin; width: 30vmin;">
+                {% load static %} 
+            <img src="{% static 'Aritra.jpeg' %}" style="max-width: 100%; max-height: 100%; border-radius: 60vmin;"/>
+          
+           
+            </div>
+          </div>
+          <div class="col-md-9 border1" style="display: flex; justify-content: center; align-items: center;">
+                <div class="container">
+                    <p style="font-weight: bold; font-size: 3vmin;">Mr. Aritra Chakraborty<br><span style="font-weight: 200;">Founder and Technical Head</span></p>
+                    <p style="font-weight: 300; font-size: 3vmin;">
+                        
+Aritra Chakraborty, an ingenious mind armed with a B.Tech in CSE (AI), ascends as the Technical Luminary. He orchestrates AI-powered revolutions, harmonizes multidisciplinary talents, and engineers the future of tech. With a keen eye on innovation, he conducts symphonies of breakthroughs, leading diverse teams to sculpt pioneering advancements that redefine the very fabric of technological excellence in an ever-evolving landscape.</p>
+                    
+                    
+                </div>
+          </div>
+          </div>
+          <div class="row About">
+            <div class="col-md-3 border1" style="display: flex; justify-content: center; align-items: center;">
+                <div class="boxImage" style="height:30vmin; width: 30vmin;">
+                    {% load static %} 
+                <img src="{% static 'AbhiNew.jpeg' %}" style="max-width: 100%; max-height: 100%; border-radius: 40vmin;"/>
+              
+                </div>
+            </div>
+            <div class="col-md-9 border1" style="display: flex; justify-content: center; align-items: center;">
+
+                <div class="container" >
+                
+                    <p style="font-weight: bold; font-size: 3vmin;">Mr. Abhishek Kumar Pandey<br><span style="font-weight: 200;">Founder and Project Management Head</span></p>
+                    <p style="font-weight: 300;">
+                        
+                        <p style="font-weight: 300;font-size: 3vmin;">
+                        
+                            
+Abhishek Kumar Pandey, a B.Tech graduate in CSE (AI), steers as the Project Management Maestro. With adept skills, he navigates complexities, orchestrates seamless project lifecycles, and harnesses team synergy. His leadership orchestrates innovation, aligns objectives, and ensures meticulous execution, driving projects to triumphant fruition while adeptly balancing technical intricacies and organizational goals.</p>
+                    
+                </div>
+               
+              
+            </div>
+            </div>
+            <div class="row About">
+                <div class="col-md-3 border1" style="display: flex; justify-content: center; align-items: center;">
+                        
+                    <div class="boxImage" style="height:30vmin; width: 30vmin;">
+                        {% load static %} 
+                    <img src="{% static 'SumNew.jpeg' %}" style="max-width: 100%; max-height: 100%; border-radius: 40vmin;"/>
+                  
+                   
+                    </div>
+               
+                </div>
+               
+                
+            <div class="col-md-9 border1" style="display: flex; justify-content: center; align-items: center;">
+                <div class="container">
+                
+                    <p style="font-weight: bold; font-size: 3vmin;">Mr. Sumit Verma<br><span style="font-weight: 200;">Co-founder and Research/Training Head</span></p>
+                     
+                    <p style="font-weight: 300;font-size: 3vmin;">
+                        
+                            
+Sumit Verma, a B.Tech graduate in CSE (AI), embodies the role of Research/Training Head. With a passion for innovation, he fuels explorative endeavors, steering cutting-edge research initiatives. His leadership cultivates a culture of continuous learning, honing talents, and nurturing future tech leaders. With a strategic vision, Sumit galvanizes teams to push the boundaries of knowledge, fostering a dynamic environment for pioneering advancements.
+                      </p>
+                                            
+                                        </div>
+                                       
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="container-fluid footerHolder" style="margin-top: 10vmin; ">
+        <div class="container-fluid" style="height: 10vmin;">
+            <p style="text-align: center; padding-top: 3vmin;font-size: 5vmin; padding-top: 2vmin;font-family: sans-serif; letter-spacing: 0.5vmin; font-weight: bold;">Contact Details</p> 
+       </div>
+       <div>
+        <div class="row footer">
+          <div class="col-md-6 border" style="color: white; display: flex; justify-content: center; align-items: center;">
+                <div class="container" style="height: 45vmin; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+                   <p><span style="font-size: 3vmin;"><b>Company Name</b></span> :<span style="font-size: 2.75vmin;"> SparkLink_Finance</span></p>
+                   <p><span style="font-size: 3vmin;"><b>Contact No</b></span> :<span style="font-size: 2.75vmin;"> 7585824862</span></p>
+                   <p><span style="font-size: 3vmin;"><b>Email</b></span> :<span style="font-size: 2.75vmin;"> aritra.chakraborty203@gmail.com</span></p>
+                   <p><span style="font-size: 3vmin;"><b>Location</b></span> :<span style="font-size: 2.75vmin;"> R&D Department IIMT college of Engineering,Greater Noida</span></p>
+                   <div class="map" style="margin-top:3vmin;">
+                   <p><span style="font-size: 3vmin;"><div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=+Plot+No%2C+IIMT+COLLEGE+OF+MANAGEMENT%2C+20-A%2C+Knowledge+Park+III%2C+Greater+Noida%2C+Uttar+Pradesh+201310&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://alarmclock.cloud/">online alarm clock</a><br><a href="https://www.onclock.net/"></a><br><style>.mapouter{position: relative;text-align: right;height: 100px;width: 500px;}</style><a href="https://www.ongooglemaps.com">location map</a><style>.gmap_canvas{overflow: hidden;background: none !important;height: 100px;width: 500px;}</style></div></div></p>
+                    </div>
+                </div>  
+          </div>
+
+        
+          <div class="col-md-6 border" id="box2" style="display: flex; justify-content: center; align-items: center;">
+             <div class="container" style=" height: 30vmin; width: 45vmin;">
+                {% load static %} 
+                <img src="{% static 'call.jpeg' %}" style="max-width: 100%; max-height: 100%; border-radius: 40vmin;"/>
+                <p style="margin-top: 3vmin; color: white; font-weight: bold; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 2.5vmin;">Please Feel free to contact to us?</p>
+            </div>
+        </div>
+        </div>
+      </div>
+
+</body>
+</html>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .border{
+       
+        height:63vmin;
+    }
+    .border1{
+      
+        height:57vmin;
+    }
+    .footer{
+        background-color:rgb(23, 107, 135);
+    }
+
+    @media(max-width:800px){
+        .map{
+            display: none;
+        }
+        #box2{
+            display: none;
+        }
+    }
+
+</style>

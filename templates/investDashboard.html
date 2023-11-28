@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <button class="btn btn-primary" style="padding:1.5vmin;margin-top:1vmin;margin-left:1vmin;"><a href="/logoutBank" style="color:white">Back</a></div>    
+    </button>
+      <div class="container" style="box-shadow:3px 5px 7px 4px;height:75vmin">
+        <p style="text-align:center;margin-top:3px;font-size:5vmin;font-family:Lucida Sans">
+            Predict Investment Amount
+        </p>
+
+        <div class="container" style="display:flex;justify-content:center">
+            <form method="post">
+                {% csrf_token %}
+                <br>
+                <input type="text" name="vertical" placeholder="Enter industry vertical..." style="width:70vmin; padding:1vmin;">
+                <br>
+                <br>
+                <input type="text" name="city" placeholder="Enter startup city..." style="width:70vmin; padding:1vmin;">
+                <br>
+                <br>
+                <input type="text" name="round" placeholder="Enter funding round..." style="width:70vmin; padding:1vmin;">
+                <br>
+                <br>
+                <input type="text" name="performance_index" placeholder="Enter performance index..." style="width:70vmin; padding:1vmin;">
+                <br>
+                <br>
+                <input type="text" name="valuation" placeholder="Enter valuation amount..." style="width:70vmin; padding:1vmin;">
+                <br>
+                <br>
+                <div class="btn-holder" style="display:flex;justify-content:center">
+                <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:3vmin;font-size:4vmin;color:{{color}}">Amount to be invested is: {{currency}} {{amount}} {{unit}} <p>
+      <p  style="text-align:center; margin-top:1vmin; font-size:3vmin;">As predicted by ML model</p>
+</html>
+
+<style>
+  
+     .border{
+        border:1px solid black;
+        height:70vmin;
+     }
+
+
+</style>

@@ -1,0 +1,19 @@
+Name,Gender,Spend_Amt,Company,Client_Id,Domain
+Aman Verma,Male,1000,Zomato,101,food
+Aman Verma,Male,400,Zomato,101,food
+Aman Verma,Male,350,Zomato,101,food
+Aman Verma,Male,1500,Zomato,101,food
+Aman Verma,Male,2000,Uber Eats,101,food
+Aman Verma,Male,150,Uber Eats,101,food
+Aman Verma,Male,800,Uber Eats,101,food
+Aman Verma,Male,290,DoDev,101,Gaming
+Aman Verma,Male,1200,Robu,101,Gaming
+Rakesh Singh,Male,2000,Dodev,102,Gaming
+Rakesh Singh,Male,1000,Game4U,102,Gaming
+Rakesh Singh,Male,200,Yolo Inc,102,Gaming
+Rakesh Singh,Male,300,DoDev,102,Gaming
+Rakesh Singh,Male,400,DoDev,102,Gaming
+Rakesh Singh,Male,600,DoDev,102,Gaming
+Shruti Patel,Female,1000,Nykaa,103,cosmetic
+Shruti Patel,Female,1000,Keya Seth,103,cosmetic
+Shruti Patel,Female,1000,Zomato,103,food
